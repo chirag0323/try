@@ -1,0 +1,122 @@
+body {
+  background-color: #212121;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding-top: 60px; /* Space for the navbar */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes the main player to center and navigation to the top */
+}
+
+/* Navigation Bar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-search input[type="text"] {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.navbar-auth .auth-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+}
+
+/* Player Container Styles */
+.player-main {
+  margin: auto; /* Center player-main horizontally */
+  width : 100%; /* Full width */
+  max-width: 1200px; /* Max-width for larger screens */
+  height: calc(100vh - 60px); /* Full height minus navbar height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-card {
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.control-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icons:hover {
+  color: #ff9800 !important;
+}
+
+.active-song-name{
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+}
+.active-artist-name {
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%; /* Ensure the text has full width to center properly */
+}
+
+/* To ensure that the active song name and artist name do not overlap the controls,
+   you can add a margin or padding to separate them. Adjust as necessary. */
+.active-song-name {
+  bottom: 20%; /* Adjust this value to position the song name correctly */
+}
+
+.active-artist-name {
+  bottom: 15%; /* Adjust this value to position the artist name correctly */
+}
+
+/* Image and Artist Details */
+.music-image {
+  border-radius: 50%;
+}
+
+.image-container {
+  padding: 80px;
+}
+
+/* Utility classes for text and layout */
+.center-text {
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

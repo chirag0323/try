@@ -1,0 +1,20 @@
+.mood-selector {
+    position: absolute;
+    top: 70px; /* Below the navbar */
+    right: 20px; /* Some padding from the right */
+    display: flex;
+  }
+  
+  .mood-selector button {
+    margin-left: 10px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mood-selector button:hover {
+    opacity: 0.8;
+  }
+  

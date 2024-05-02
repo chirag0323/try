@@ -1,0 +1,25 @@
+:root {
+    --player-theme-color: #000000; /* Default player color */
+  }
+  
+  body {
+    transition: background-color 0.5s ease;
+    background-color: var(--player-theme-color);
+  }
+  
+  /* You can add specific moods if you like */
+  .mood-calm {
+    --player-theme-color: #89CFF0; /* Blue for calm mood */
+  }
+  
+  .mood-energetic {
+    --player-theme-color: #FF4500; /* Orange for energetic mood */
+  }
+  
+  .mood-happy {
+    --player-theme-color: #FFD700; /* Yellow for happy mood */
+  }
+  
+  .mood-sad {
+    --player-theme-color: #A9A9A9; /* Grey for sad mood */
+  }
